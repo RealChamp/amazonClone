@@ -1,11 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
+import {ArrowBackIos, ArrowForwardIos} from '@material-ui/icons';
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import './Slider.css'
+
  
 function ImagesSlider() {
     const settings = {
       arrows: true,
+      prevArrow: <ArrowBackIos/>,
+      nextArrow: <ArrowForwardIos/>,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -28,6 +32,9 @@ function ImagesSlider() {
         </div>
         <div className='sliderImage-container'>
           <img className='sliderImage' src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Currency_v2_en_US_2x._CB428993290_.jpg" alt="shop-local"/>
+        </div>
+        <div className='sliderImage-container'>
+          <img className='sliderImage' src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Sports_en_US_1x._CB431860448_.jpg" alt="sports&outdoor"/>
         </div>
       </Slider>
       </>
