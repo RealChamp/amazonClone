@@ -1,10 +1,9 @@
 .product {
     display: flex;
-    align-items: center;
-    /* justify-content: flex-end; */
+    align-items: flex-start;
     flex-direction: column;
     min-width: 100px;
-    max-height: 400px;
+    min-height: 400px;
     width: 100%;
     background-color: #fff;
     margin: 10px;
@@ -14,6 +13,7 @@
 
 .product > img {
     max-height: 200px;
+    align-self: center;
     width: 100%;
     object-fit: contain;
     margin-bottom: 15px;
@@ -25,6 +25,7 @@
     background-color: #f0c14b;
     color: #111;
     margin-top: 10px;
+    align-self: center;
 }
 
 .price {
@@ -32,6 +33,10 @@
 }
 
 .info {
-    height: 100px;
+    min-height: 100px;
     margin-bottom: 15px;
+}
+
+.info > p {
+    font-size: 1.15rem;
 }

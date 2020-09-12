@@ -26,17 +26,19 @@
     width: 100%;
     height: 12px;
     border: none;
-    padding: 10px;
+    padding: 15px;
+    outline-width: 0;
 }
 
 .search .icon {
-    height: 22px !important;
+    height: 30px !important;
+    width: 33px !important;
     background-color: #cd9042;
-    padding: 5px;
+    padding: 4px;
 }
 
 .lineOne {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
 }
 
 .lineTwo {
