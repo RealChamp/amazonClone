@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Home.module.css'
-import Slider from './Slider'
-import Product from './Product'
+import Slider from '../../components/Slider'
+import Product from '../../components/Product'
 
 function Home() {
     return (

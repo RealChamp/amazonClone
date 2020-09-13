@@ -1,15 +1,18 @@
 import React from 'react'
 import classes from './Header.module.css'
 import {Search, ShoppingBasket} from '@material-ui/icons'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
       <div className={classes.header}>
+      <Link to='/'>
         <img
           className={classes.logo}
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
           alt="logo"
         />
+        </Link>
 
         <div className={classes.search}>
           <input className={classes.input} type="text" />
@@ -29,10 +32,12 @@ function Header() {
             <span className={classes.lineOne}>Your</span>
             <span className={classes.lineTwo}>Prime</span>
           </div>
+          <Link to='/checkout'>
           <div className={classes.basket}>
               <ShoppingBasket/>
               <span className={`${classes.lineTwo} ${classes.count}`}>0</span>
           </div>
+          </Link>
         </div>
       </div>
     );
